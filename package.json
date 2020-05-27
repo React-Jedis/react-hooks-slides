@@ -10,5 +10,8 @@
     "code-surfer": "3.1.0",
     "mdx-deck": "3.0.13"
   },
-  "name": "react-hooks"
+  "name": "react-hooks",
+  "dependencies": {
+    "styled-components": "^5.1.1"
+  }
 }
