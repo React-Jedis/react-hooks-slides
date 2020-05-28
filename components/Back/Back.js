@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import CoverBase from "./CoverBase";
+import BackBase from "./BackBase";
 
-const Cover = styled(CoverBase)`
+const Back = styled(BackBase)`
   background: #283c86;
   background: linear-gradient(
     to right bottom,
@@ -17,14 +17,6 @@ const Cover = styled(CoverBase)`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
-  .speakers {
-    font-size: 21px;
-
-    > * {
-      margin-right: 8px;
-    }
-  }
 `;
 
-export default Cover;
+export default Back;

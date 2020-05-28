@@ -2,15 +2,15 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "start": "mdx-deck ./lessons/react-hooks.mdx",
+    "build": "mdx-deck build ./lessons/react-hooks.mdx",
     "test": "echo \"there are no tests\""
   },
   "devDependencies": {
     "code-surfer": "3.1.0",
     "mdx-deck": "3.0.13"
   },
-  "name": "react-hooks",
+  "name": "mdx-slides",
   "dependencies": {
     "styled-components": "^5.1.1"
   }
