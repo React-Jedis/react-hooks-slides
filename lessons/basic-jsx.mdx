@@ -1,0 +1,63 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer";
+import { vsDark } from "@code-surfer/themes";
+
+import Cover from "../components/Cover";
+import Back from "../components/Back";
+import baseTheme from "../theme";
+import "../style.css";
+
+export const theme = {
+  ...vsDark,
+  ...baseTheme,
+};
+
+<Cover
+  title="Basic JSX"
+  speakers={["@dastasoft", "@rubenofen"]}
+/>
+
+---
+
+## Basic JSX
+
+JSX stands for **J**ava**S**cript **X**ML. <br />
+It's not mandatory to use with React but it's highly recommendable.
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```jsx
+const element = <h1 className="greeting">Hello, world!</h1>;
+```
+
+```js
+const element = React.createElement(
+  "h1",
+  { className: "greeting" },
+  "Hello, world!"
+);
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+## Why JSX
+
+- Provides separation of concerns instead of seperation of technologies
+- Prevents from code injection
+- Easy learn curve
+- Easy to read / easy to maintain
+
+---
+
+<Back title="YOUR PRESENTATION" />

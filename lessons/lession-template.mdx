@@ -1,0 +1,25 @@
+import { CodeSurfer } from "code-surfer";
+import { vsDark } from "@code-surfer/themes";
+
+import Cover from "../components/Cover";
+import Back from "../components/Back";
+import baseTheme from "../theme";
+import "../style.css";
+
+export const theme = {
+  ...vsDark,
+  ...baseTheme,
+};
+
+<Cover
+  title="YOUR PRESENTATION"
+  speakers={["your speakers"]}
+/>
+
+---
+
+## YOUR PRESENTATION
+
+---
+
+<Back title="YOUR PRESENTATION" />

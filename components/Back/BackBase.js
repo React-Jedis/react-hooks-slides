@@ -1,9 +1,9 @@
 import React from "react";
 
-const BackBase = ({ className }) => {
+const BackBase = ({ className, title }) => {
   return (
     <div className={className}>
-      <h1>REACT HOOKS</h1>
+      <h1>{title}</h1>
     </div>
   );
 };
