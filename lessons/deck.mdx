@@ -1,0 +1,137 @@
+import { prism, future } from "@mdx-deck/themes";
+import { CodeSurfer } from "code-surfer";
+import node from "./assets/node.png";
+import npm from "./assets/npm.png";
+import vscode from "./assets/vscode.png";
+import parcel from "./assets/parcel.png";
+import ParcelLogo from "./assets/logoParcel.svg";
+import ParcelDown from "./assets/parcelDownload.png";
+import Wamp from "./assets/wamp.png";
+
+export const theme = {
+  ...prism,
+  ...future,
+};
+
+# Prerequisites
+
+- Node
+- npm
+- .npmrc
+- vscode
+- parcel-react-boilerplate
+- wamp
+
+---
+
+<div style={{ display: "flex", alignItems: "center" }}>
+  <img
+    src={node}
+    alt="node"
+    style={{ maxWidth: "10rem", maxHeight: "10rem" }}
+  />
+  <span style={{ margin: "1rem", fontSize: "4rem" }}>+</span>
+  <img src={npm} alt="npm" style={{ maxWidth: "10rem", maxHeight: "10rem" }} />
+</div>
+
+### Installation
+
+- Download <a href="https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi">Node</a>
+- Check Installation of Node and npm
+  - Open a console and type
+
+```bash
+node --version
+> v12.13.1
+
+npm --version
+> 6.12.1
+```
+
+---
+
+# Configure npm
+
+Modify configuration of npm to add proxy to download javascript npm libraries
+
+Open a console and type
+
+```bash
+npm config set proxy http://user:pass@proxy2.inti.com:3128
+npm config set https-proxy http://user:pass@proxy2.inti.com:3128
+```
+
+To check the the configuration added. Access to **_~/user/.npmrc_** and verify that the proxies have been set properly.
+
+---
+
+# Where we are
+
+- ✔️ Node
+- ✔️ npm
+- ✔️ .npmrc
+- vscode
+- parcel-react-boilerplate
+- wamp
+
+---
+
+<img src={vscode} alt="vscode" style={{ maxHeight: "10rem" }} />
+
+- Download the installer <a href="https://code.visualstudio.com/Download">VsCode</a>
+- Install it! 👍
+
+---
+
+<div style={{ display: "flex", alignItems: "center" }}>
+  <img
+    src={parcel}
+    alt="parcel"
+    style={{ maxWidth: "2rem", maxHeight: "2rem" }}
+  />
+  <img
+    src={ParcelLogo}
+    style={{ maxWidth: "7rem", maxHeight: "2rem", marginLeft: "0.5rem" }}
+  />
+</div>
+
+- Go to <a href="https://github.com/dastasoft/parcel-react-boilerplate">Parcel boilerplate</a>
+- Download the zip
+
+  <img
+    src={ParcelDown}
+    style={{ maxWidth: "60rem", maxHeight: "20rem", marginLeft: "0.5rem" }}
+  />
+
+- Unzip the folder.
+
+---
+
+- Access to de root of the folder and open a console.
+
+  ```bash
+    npm install
+  ```
+
+- When the installation is finished, check that the application is working
+
+  ```bash
+    npm start
+
+    > parcel-react-boilerplate@1.0.0 start
+    > parcel src/index.html
+
+    Server running at http://localhost:1234
+    √  Built in 6.71s.
+  ```
+
+---
+
+<img src={Wamp} style={{ maxWidth: "5rem", maxHeight: "5rem" }} />
+
+- Download <a href="https://sourceforge.net/projects/wampserver/">Wamp server</a>
+- Install it! 👍
+
+---
+
+✔️ Congrats you are prepared for the react introduction training
