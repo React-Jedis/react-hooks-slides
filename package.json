@@ -2,7 +2,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "mdx-deck ./lessons/react-hooks.mdx",
+    "start": "mdx-deck ./lessons/introduction.mdx",
     "build": "mdx-deck build ./lessons/react-hooks.mdx",
     "test": "echo \"there are no tests\""
   },

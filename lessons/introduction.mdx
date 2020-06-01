@@ -1,5 +1,9 @@
-import { prism, future } from "@mdx-deck/themes";
 import { CodeSurfer } from "code-surfer";
+import { vsDark } from "@code-surfer/themes";
+
+import Cover from "../components/Cover";
+import Back from "../components/Back";
+import baseTheme from "../theme";
 import node from "./assets/node.png";
 import npm from "./assets/npm.png";
 import vscode from "./assets/vscode.png";
@@ -7,11 +11,19 @@ import parcel from "./assets/parcel.png";
 import ParcelLogo from "./assets/logoParcel.svg";
 import ParcelDown from "./assets/parcelDownload.png";
 import Wamp from "./assets/wamp.png";
+import "../style.css";
 
 export const theme = {
-  ...prism,
-  ...future,
+  ...vsDark,
+  ...baseTheme,
 };
+
+<Cover
+  title="Prerequisites"
+  speakers={["@dastasoft", "@rubenofen"]}
+/>
+
+---
 
 # Prerequisites
 
@@ -135,3 +147,7 @@ To check the the configuration added. Access to **_~/user/.npmrc_** and verify t
 ---
 
 ✔️ Congrats you are prepared for the react introduction training
+
+---
+
+<Back />
